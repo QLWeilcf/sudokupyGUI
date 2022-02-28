@@ -298,7 +298,7 @@ def btnClick(x): #按钮点击的回调函数
             if isvs==-1:
                 messagebox.showinfo('提示','当前盘面为空，请先手动输入一个合法盘面或点生成数独')
             elif isvs:
-                ss=sovSudoku(s1cp)
+                ss=sovSudoku(s6)  #ss=sovSudoku(s1cp)
                 ss.solve()
                 s3=ss.getSudoku() #[[1,2],[3,4]]
                 s4=xyTo81(s3)
